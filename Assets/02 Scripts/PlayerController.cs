@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] GameManager gameManager;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.RightArrow)){
+            Debug.Log("Flecha derecha");
+            gameManager.ChangeToNextScene();
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            Debug.Log("Flecha izquierda");
+            gameManager.ChangeToPreviousScene();
+        }
     }
 }
