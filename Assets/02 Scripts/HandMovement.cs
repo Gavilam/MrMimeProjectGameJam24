@@ -12,7 +12,10 @@ public class HandMovement : MonoBehaviour
     [SerializeField] Transform cauldronHandTransform;
     [SerializeField] float animationDuration = 2;
     [SerializeField] AnimationCurve ease;
+    [SerializeField] Sprite openHand;
+    [SerializeField] Sprite closeHand;
 
+    SpriteRenderer spriteRenderer;
     Transform grabbedIngredient = null;
 
     bool canMove = true;
@@ -20,7 +23,7 @@ public class HandMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
+        spriteRenderer = GetComponent<SpriteRenderer>();
         Events.TimeOver.AddListener(OnTimeOver);
     }
 
@@ -54,7 +57,7 @@ public class HandMovement : MonoBehaviour
         if (collision.CompareTag("Ingredient"))
         {
             selectedPotion = collision.gameObject;
-
+            spriteRenderer.sprite = closeHand;
             StartCoroutine(MoveToCauldronCoroutine());
 
             grabbedIngredient = collision.transform;
@@ -92,5 +95,6 @@ public class HandMovement : MonoBehaviour
         grabbedIngredient.parent = null;
         grabbedIngredient.gameObject.tag = "FallingIngredient";
         grabbedIngredient.GetComponent<Rigidbody2D>().gravityScale = 1;
+        spriteRenderer.sprite = openHand;
     }
 }

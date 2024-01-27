@@ -46,12 +46,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ingredients
+    uniqueID: 3907980949
+    locked: 0
   - name: Potions
     uniqueID: 3286481595
     locked: 0
   - name: Hand
     uniqueID: 2658320591
-    locked: 0
-  - name: Ingredients
-    uniqueID: 3907980949
     locked: 0
