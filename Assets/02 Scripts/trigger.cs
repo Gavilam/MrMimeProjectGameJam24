@@ -6,7 +6,7 @@ public class trigger : MonoBehaviour
 {
     public Animator animator;
     public string nombreDeTrigger = "trigger_lanzar";
-
+    public float tiempo01, tiempo02, tiempo03;
 
     //array de gameObjects
     public GameObject[] GOActivar;
@@ -36,16 +36,16 @@ public class trigger : MonoBehaviour
         //Activar GO Foco Trasero
         //Activar GO Luces
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(tiempo01);
         GOActivar[0].SetActive(true);
         //Meter cambio de personaje se muestra en funcion de exito o no. HAcer en otra funcion?
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(tiempo02);
         GOActivar[3].SetActive(false);
         GOPersonajes[0].SetActive(false);
         GOPersonajes[1].SetActive(true);
 
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(tiempo03);
         GOActivar[1].SetActive(true); //Activa foco trasero
         GOActivar[2].SetActive(true); //Activa Luces
     }
