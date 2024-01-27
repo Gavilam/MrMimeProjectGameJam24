@@ -5,17 +5,16 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] GameManager gameManager;
-
+    
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow)){
-            Debug.Log("Flecha derecha");
+        if (Input.GetKeyDown(KeyCode.N)){
             gameManager.ChangeToNextScene();
         }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        else if (Input.GetKeyDown(KeyCode.Delete))
         {
-            Debug.Log("Flecha izquierda");
             gameManager.ChangeToPreviousScene();
         }
     }
+
 }
