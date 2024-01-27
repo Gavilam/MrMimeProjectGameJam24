@@ -592,7 +592,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 0
   m_HDR: 1
-  m_AllowMSAA: 0
+  m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 0
@@ -954,6 +954,9 @@ MonoBehaviour:
   textUI: {fileID: 449043078}
   textToShow: hola me llamo Paco
   textcontinue: "prodr\xEDa revertirme el hechizo"
+  escribir: 0
+  gameManager: {fileID: 2042419261}
+  count: 0
   charWaitTime: 0.05
 --- !u!114 &1638064234
 MonoBehaviour:
