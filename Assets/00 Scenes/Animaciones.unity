@@ -15296,6 +15296,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1848987991}
   nombreDeTrigger: trigger_lanzar
+  tiempo01: 1.4
+  tiempo02: 1
+  tiempo03: 0.1
   GOActivar:
   - {fileID: 1473760058}
   - {fileID: 607255040}
