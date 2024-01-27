@@ -26,6 +26,7 @@ public class timerControl : MonoBehaviour
 
         if(time <= 0){
             stopTimer = true;
+            Events.TimeOver.Invoke();
         }
 
         if (stopTimer == false){
