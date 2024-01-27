@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/00 Scenes/00TitleScene.unity
     guid: 6a1ec5cef8370a04683c8007486fd962
   - enabled: 1
-    path: Assets/00 Scenes/01ClientScene.unity
+    path: Assets/00 Scenes/00ClientScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/00 Scenes/02BookScene.unity
