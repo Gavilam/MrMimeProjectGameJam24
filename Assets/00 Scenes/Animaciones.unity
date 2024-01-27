@@ -15296,8 +15296,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1848987991}
   nombreDeTrigger: trigger_lanzar
-  GOActivar: []
-  GOPersonajes: []
+  GOActivar:
+  - {fileID: 1473760058}
+  - {fileID: 607255040}
+  - {fileID: 1477485344}
+  - {fileID: 1848987990}
+  GOPersonajes:
+  - {fileID: 1514945457}
+  - {fileID: 18848239}
+  - {fileID: 218533490}
 --- !u!4 &912454944
 Transform:
   m_ObjectHideFlags: 0

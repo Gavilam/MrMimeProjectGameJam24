@@ -11,7 +11,6 @@ public class trigger : MonoBehaviour
     //array de gameObjects
     public GameObject[] GOActivar;
     public GameObject[] GOPersonajes; //0 Base , 1 exito, 0 fallo
-   
 
 
 
@@ -31,13 +30,21 @@ public class trigger : MonoBehaviour
     IEnumerator Corrutina()
     {
         //Primero activar el GameObject Humo
+        //Desactivar pocion
         //Segundo desactivar GO personaje 1
         //Segun resultado de pocion activar personaje 2 o 3 (suponiendo que 2 es exito y 3 fallo)
         //Activar GO Foco Trasero
         //Activar GO Luces
-        
+
+        yield return new WaitForSeconds(2);
         GOActivar[0].SetActive(true);
         //Meter cambio de personaje se muestra en funcion de exito o no. HAcer en otra funcion?
+        yield return new WaitForSeconds(1);
+        GOActivar[3].SetActive(false);
+        GOPersonajes[0].SetActive(false);
+        GOPersonajes[1].SetActive(true);
+
+
         yield return new WaitForSeconds(2);
         GOActivar[1].SetActive(true); //Activa foco trasero
         GOActivar[2].SetActive(true); //Activa Luces
