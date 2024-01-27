@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     {
         currentScene = SceneManager.GetActiveScene().buildIndex;
 
+        
+
         Events.IngredientsDropped.AddListener(CheckIngredientList);
     }
 
