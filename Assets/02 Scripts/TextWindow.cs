@@ -18,7 +18,19 @@ public class TextWindow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        textToShow = "¿hola como estas?";
+
+
+        //diálogo 1 zarigüeya: 
+        //diálogo 2 zarigüeya: ¿prodias revertir el hechizo?
+
+        //diálogo 1 chaval:
+        //diálogo 2 chaval:¿Me haria mah duro?
+
+
+
         textUI.text = textToShow;
+        
         escribir = true;
         count = 0;
         StartCoroutine(SlowlyShowText(textToShow));
