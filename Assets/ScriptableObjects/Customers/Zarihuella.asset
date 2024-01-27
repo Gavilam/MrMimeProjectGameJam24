@@ -17,3 +17,7 @@ MonoBehaviour:
   image: {fileID: 0}
   goodResult: {fileID: 0}
   badResult: {fileID: 0}
+  textos:
+  - Hola me llamo Pepe
+  - Revierte la transformacion
+  exito: 0

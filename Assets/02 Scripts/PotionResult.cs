@@ -7,4 +7,5 @@ using UnityEngine;
 public class PotionResult : ScriptableObject
 {
     public bool success;
+    public Customer customer;
 }

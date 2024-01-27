@@ -892,7 +892,7 @@ PrefabInstance:
     - target: {fileID: 8442463782250436817, guid: c98539c9682318847abea3ef7d589aa7, type: 3}
       propertyPath: potionResult
       value: 
-      objectReference: {fileID: 11400000, guid: 08cb4b231e91cc44e9bd20179d008aec, type: 2}
+      objectReference: {fileID: 11400000, guid: 9b87883db918d6e4ca1ae2540de1b1a6, type: 2}
     - target: {fileID: 8442463782250436817, guid: c98539c9682318847abea3ef7d589aa7, type: 3}
       propertyPath: lists.Array.size
       value: 2
