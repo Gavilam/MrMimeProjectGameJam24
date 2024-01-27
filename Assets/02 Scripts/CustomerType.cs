@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum IngredientType
+public enum CustomerType
 {
-    Carta,
-    Tablilla,
-    Harina,
-    Calcetin
+    Transformacion,
+    Duro
 }
