@@ -8,14 +8,11 @@ public class trigger : MonoBehaviour
     public string nombreDeTrigger = "trigger_lanzar";
 
 
-    //array de gameObject
-    public GameObject[] gameObjectActivar;
+    //array de gameObjects
+    public GameObject[] GOActivar;
+    public GameObject[] GOPersonajes; //0 Base , 1 exito, 0 fallo
+   
 
-    void Start()
-    {
-        gameObjectActivar = new GameObject[6];
-        animator = GetComponent<Animator>();
-    }
 
 
     void Update()
@@ -25,9 +22,12 @@ public class trigger : MonoBehaviour
         {
             // Activar la animación utilizando el trigger
             animator.SetTrigger(nombreDeTrigger);
+
+            //Empezar corrutina
+            StartCoroutine(Corrutina());
         }
     }
-
+    
     IEnumerator Corrutina()
     {
         //Primero activar el GameObject Humo
@@ -35,9 +35,11 @@ public class trigger : MonoBehaviour
         //Segun resultado de pocion activar personaje 2 o 3 (suponiendo que 2 es exito y 3 fallo)
         //Activar GO Foco Trasero
         //Activar GO Luces
-
-        test.gameobject.setActive(true);
-        yield new WaitforSeconds(2);
-        test2.gameobject.setActive(true);
+        
+        GOActivar[0].SetActive(true);
+        //Meter cambio de personaje se muestra en funcion de exito o no. HAcer en otra funcion?
+        yield return new WaitForSeconds(2);
+        GOActivar[1].SetActive(true); //Activa foco trasero
+        GOActivar[2].SetActive(true); //Activa Luces
     }
 }
