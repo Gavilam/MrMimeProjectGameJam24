@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Estás en la primera escena");
+            Debug.Log("Estï¿½s en la primera escena");
         }
         
     }
