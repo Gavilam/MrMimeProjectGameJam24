@@ -56,6 +56,14 @@ public class GameManager : MonoBehaviour
 
         customer.success = correntMatch;
         Debug.Log("Resultado: " + correntMatch);
+
+        AnimateRisingPotion();
+        
         flowManager.ChangeToNextScene();
+    }
+
+    private void AnimateRisingPotion()
+    {
+
     }
 }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Duro
   m_EditorClassIdentifier: 
   id: 1
-  recipe: {fileID: 0}
+  recipe: {fileID: 11400000, guid: e67a3874d2cea1649b2fdba05ca59c6e, type: 2}
   image: {fileID: 21300000, guid: 23e4e44246aafe246ab35c9e6a08e523, type: 3}
   goodResult: {fileID: 21300000, guid: bdb1c24174256e448bee4f59efe4f906, type: 3}
   badResult: {fileID: 21300000, guid: eb64d82575758094f8048ce4fbd10b78, type: 3}
