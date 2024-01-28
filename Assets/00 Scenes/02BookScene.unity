@@ -482,7 +482,7 @@ GameObject:
   - component: {fileID: 1964131645}
   - component: {fileID: 1964131644}
   m_Layer: 0
-  m_Name: libro_duro
+  m_Name: Sprite_Libro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
