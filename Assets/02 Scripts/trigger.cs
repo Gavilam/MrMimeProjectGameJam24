@@ -8,6 +8,11 @@ public class trigger : MonoBehaviour
     public string nombreDeTrigger = "trigger_lanzar";
     public float tiempo01, tiempo02, tiempo03, tiempo04;
 
+    [SerializeField] AudioClip throwPotion;
+    [SerializeField] AudioClip goodAudio;
+    [SerializeField] AudioClip badAudio;
+    [SerializeField] AudioSource audioSource;
+
     //array de gameObjects
     public GameObject[] GOActivar;
     //public GameObject[] GOPersonajes; //0 Base , 1 exito, 0 fallo
@@ -16,6 +21,8 @@ public class trigger : MonoBehaviour
     [SerializeField] GameObject customer_object;
     private SpriteRenderer customerSprite;
     public Customer customer;
+
+    private bool isPotionThrown = false;
 
     private void Start()
     {
@@ -29,8 +36,13 @@ public class trigger : MonoBehaviour
     void Update()
     {
         //Pulsar Espacio
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !isPotionThrown)
         {
+            isPotionThrown = true;
+            audioSource.clip = throwPotion;
+
+            audioSource.Play();
+
             // Activar la animación utilizando el trigger
             animator.SetTrigger(nombreDeTrigger);
 
@@ -85,13 +97,16 @@ public class trigger : MonoBehaviour
         Debug.Log("Resultado Scene - " + customer.success);
         if (customer.success)
         {
+            audioSource.clip = goodAudio;
             customerSprite.sprite = customer.goodResult;
         }
         else
         {
+            audioSource.clip = badAudio;
             customerSprite.sprite = customer.badResult;
         }
 
+        audioSource.Play();
 
         yield return new WaitForSeconds(tiempo03);
         GOActivar[1].SetActive(true); //Activa foco trasero
