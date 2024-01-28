@@ -22,3 +22,4 @@ MonoBehaviour:
   - wefsafdsfsdf
   success: 0
   failedPotionText: 
+  LibroReceta: {fileID: 21300000, guid: 9775047ae5f616d428a8d7751a4ee7fa, type: 3}

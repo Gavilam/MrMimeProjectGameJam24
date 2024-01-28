@@ -14,4 +14,5 @@ public class Customer : ScriptableObject
     public string[] textos;
     public bool success;
     public string failedPotionText;
+    public Sprite LibroReceta;
 }
