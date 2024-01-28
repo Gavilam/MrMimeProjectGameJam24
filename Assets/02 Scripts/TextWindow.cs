@@ -8,10 +8,13 @@ public class TextWindow : MonoBehaviour
 {
     [SerializeField] TMP_Text customerTextBox;
     [SerializeField] TMP_Text shopkeeperTextBox;
-    [SerializeField] Customer customer;
+    [SerializeField] ClientSceneManager clientSceneManager;
+    private Customer customer;
     [SerializeField] string magaDialogo;
     [SerializeField] FlowManager flowManager;
     int count = 0;
+
+    public bool isSpaceActive = false;
  
     [SerializeField] float charWaitTime = 0.05f;
     Coroutine coroutine = null;
@@ -46,6 +49,12 @@ public class TextWindow : MonoBehaviour
                 coroutine = StartCoroutine(SlowlyShowText());
         };
 
+    }
+
+    public void ActivateSpaceKey()
+    {
+        customer = clientSceneManager.customer;
+        isSpaceActive = true;
     }
 
     IEnumerator SlowlyShowText(){
