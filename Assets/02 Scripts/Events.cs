@@ -8,6 +8,7 @@ public class Events
     public class IngredientListEvent : UnityEvent<List<IngredientType>> { };
 
     public static UnityEvent TimeOver = new UnityEvent();
+    public static UnityEvent CustomerReady = new UnityEvent();
 
     public static IngredientListEvent IngredientsDropped = new IngredientListEvent();
 }

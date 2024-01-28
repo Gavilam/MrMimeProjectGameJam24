@@ -10,7 +10,7 @@ public class TextWindow : MonoBehaviour
     [SerializeField] string textToShow;
     [SerializeField] string textcontinue;
     [SerializeField] bool escribir;
-    [SerializeField] GameManager gameManager;
+    [SerializeField] FlowManager flowManager;
     [SerializeField] int count;
  
     [SerializeField] float charWaitTime = 0.05f;
@@ -45,7 +45,7 @@ public class TextWindow : MonoBehaviour
             
         };
         if(Input.GetKeyDown(KeyCode.Space) && count == 2){
-            gameManager.ChangeToNextScene();
+            flowManager.ChangeToNextScene();
             Debug.Log("pasa de escena");
         };
     }
