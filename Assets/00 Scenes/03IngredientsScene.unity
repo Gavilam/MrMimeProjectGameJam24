@@ -1280,7 +1280,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &648138661
 Animator:
   serializedVersion: 5
@@ -1291,7 +1291,7 @@ Animator:
   m_GameObject: {fileID: 648138660}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 239157b843d01064fb7e21f88e4b985d, type: 2}
+  m_Controller: {fileID: 9100000, guid: cd4a1943791fc404a8fcf94773a5f8d8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
