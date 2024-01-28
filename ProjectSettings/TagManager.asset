@@ -55,3 +55,6 @@ TagManager:
   - name: Hand
     uniqueID: 2658320591
     locked: 0
+  - name: Fades_IN-OUT
+    uniqueID: 3975364495
+    locked: 0
