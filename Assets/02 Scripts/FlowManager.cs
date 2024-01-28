@@ -31,10 +31,9 @@ public class FlowManager : MonoBehaviour
         }
     }
 
-    public void ChangeToScene(int sceneNumber)
+    public void ChangeToScene(string title)
     {
-        currentScene = sceneNumber;
-        SceneManager.LoadScene(sceneNames[sceneNumber]);
+        SceneManager.LoadScene(title);
     }
 
     public void ChangeToNextScene()
