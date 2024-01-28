@@ -13,4 +13,5 @@ public class Customer : ScriptableObject
     public Sprite badResult;
     public string[] textos;
     public bool success;
+    public string failedPotionText;
 }

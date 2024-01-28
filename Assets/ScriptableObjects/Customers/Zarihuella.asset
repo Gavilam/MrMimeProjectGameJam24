@@ -18,6 +18,13 @@ MonoBehaviour:
   goodResult: {fileID: 21300000, guid: 0dd607fadaceaed4f8829fba59190c7c, type: 3}
   badResult: {fileID: 21300000, guid: cd3c64b8583566e40bcbd7e87ead1e1e, type: 3}
   textos:
+<<<<<<< HEAD
   - Hola me llamo Pepe
   - Revierte la transformacion
   success: 0
+=======
+  - Me han echado tremenda maldision.
+  - "\xBFPuedes revertir sus efectos?"
+  failedPotionText: 
+  exito: 0
+>>>>>>> textos-bocadillo
