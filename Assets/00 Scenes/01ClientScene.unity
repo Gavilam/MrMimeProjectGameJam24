@@ -456,7 +456,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -24.549667, y: -25.396202, z: -44.86664, w: 0}
+  m_margin: {x: -16.51799, y: -25.396202, z: -36.834915, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -803,7 +803,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -24.549667, y: -25.396202, z: -44.86664, w: 0}
+  m_margin: {x: -24.549667, y: -26.734825, z: -44.86664, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -872,8 +872,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -142.29999}
-  m_SizeDelta: {x: 404, y: 382}
+  m_AnchoredPosition: {x: -7, y: -110}
+  m_SizeDelta: {x: 404, y: 282.6}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1273264870
 MonoBehaviour:
@@ -1427,7 +1427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95eaffb6858fd044bb8198773539e06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customer: {fileID: 11400000, guid: 4facdaaa8fd6dcc46b968068b0c75eca, type: 2}
+  customer: {fileID: 11400000, guid: 4df1c1f71b70def4789afd3fa78ed4c1, type: 2}
   storage: {fileID: 11400000, guid: 2ba14cb5c883df24a9a2ce1a552f15b2, type: 2}
   customer_object: {fileID: 1635298543}
 --- !u!4 &2116767840
