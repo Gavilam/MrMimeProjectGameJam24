@@ -6574,7 +6574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8442463782250436817, guid: c98539c9682318847abea3ef7d589aa7, type: 3}
       propertyPath: tiempo03
-      value: 0.7
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 8442463782250436817, guid: c98539c9682318847abea3ef7d589aa7, type: 3}
       propertyPath: flowManager
