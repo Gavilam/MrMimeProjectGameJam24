@@ -11,8 +11,17 @@ public class trigger : MonoBehaviour
     //array de gameObjects
     public GameObject[] GOActivar;
     public GameObject[] GOPersonajes; //0 Base , 1 exito, 0 fallo
+    [SerializeField] StorageScript storage;
+    [SerializeField] GameObject customer_object;
+    private SpriteRenderer customerSprite;
+    public Customer customer;
 
-
+    private void Start()
+    {
+        customer = GetCustomer();
+        //Events.CustomerReady?.Invoke();
+        SetCustomer();
+    }
 
     void Update()
     {
@@ -26,7 +35,19 @@ public class trigger : MonoBehaviour
             StartCoroutine(Corrutina());
         }
     }
-    
+
+    private Customer GetCustomer()
+    {
+        return storage.customers[storage.n_customer];
+    }
+
+    private void SetCustomer()
+    {
+        customerSprite = customer_object.GetComponent<SpriteRenderer>();
+        customerSprite.sprite = customer.image;
+        customer_object.SetActive(true);
+    }
+
     IEnumerator Corrutina()
     {
         //Primero activar el GameObject Humo
@@ -38,11 +59,22 @@ public class trigger : MonoBehaviour
 
         yield return new WaitForSeconds(tiempo01);
         GOActivar[0].SetActive(true);
+
         //Meter cambio de personaje se muestra en funcion de exito o no. HAcer en otra funcion?
         yield return new WaitForSeconds(tiempo02);
         GOActivar[3].SetActive(false);
-        GOPersonajes[0].SetActive(false);
-        GOPersonajes[1].SetActive(true);
+        //GOPersonajes[0].SetActive(false);
+        //GOPersonajes[1].SetActive(true);
+
+        Debug.Log("Resultado Scene - " + customer.success);
+        if (customer.success)
+        {
+            customerSprite.sprite = customer.goodResult;
+        }
+        else
+        {
+            customerSprite.sprite = customer.badResult;
+        }
 
 
         yield return new WaitForSeconds(tiempo03);
