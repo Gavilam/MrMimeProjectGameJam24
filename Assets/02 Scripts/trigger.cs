@@ -39,9 +39,8 @@ public class trigger : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && !isPotionThrown)
         {
             isPotionThrown = true;
-            audioSource.clip = throwPotion;
 
-            audioSource.Play();
+            audioSource.PlayOneShot(throwPotion);
 
             // Activar la animación utilizando el trigger
             animator.SetTrigger(nombreDeTrigger);

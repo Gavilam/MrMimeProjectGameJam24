@@ -20,6 +20,6 @@ MonoBehaviour:
   textos:
   - "Me han echado tremenda maldici\xF3n."
   - "\xBFpuedes revertir sus efectos?"
-  success: 0
+  success: 1
   failedPotionText: 
   LibroReceta: {fileID: 21300000, guid: 9775047ae5f616d428a8d7751a4ee7fa, type: 3}

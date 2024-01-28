@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     //[SerializeField] List<IngredientList> lists;
     [SerializeField] StorageScript storage;
 
+    [SerializeField] AudioSource source;
+    [SerializeField] AudioClip subi;
+
     //array
     public GameObject[] GOActivar;
     public float tiempo01, tiempo02, tiempo03;
@@ -78,6 +81,8 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(tiempo01); //4
 
         //poner hacer pocion
+        source.PlayOneShot(subi);
+
         GOActivar[2].SetActive(true);
      
         yield return new WaitForSeconds(tiempo02); //3

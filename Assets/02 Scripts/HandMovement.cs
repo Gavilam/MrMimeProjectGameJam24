@@ -15,6 +15,9 @@ public class HandMovement : MonoBehaviour
     [SerializeField] Sprite openHand;
     [SerializeField] Sprite closeHand;
 
+    [SerializeField] AudioClip drop;
+    [SerializeField] AudioSource source;
+
     SpriteRenderer spriteRenderer;
     Transform grabbedIngredient = null;
 
@@ -61,6 +64,9 @@ public class HandMovement : MonoBehaviour
         {
             selectedPotion = collision.gameObject;
             spriteRenderer.sprite = closeHand;
+
+            source.PlayOneShot(drop);
+
             StartCoroutine(MoveToCauldronCoroutine());
 
             grabbedIngredient = collision.transform;
