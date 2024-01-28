@@ -18,8 +18,8 @@ MonoBehaviour:
   goodResult: {fileID: 21300000, guid: 0dd607fadaceaed4f8829fba59190c7c, type: 3}
   badResult: {fileID: 21300000, guid: cd3c64b8583566e40bcbd7e87ead1e1e, type: 3}
   textos:
-  - dsfdsfafd
-  - wefsafdsfsdf
+  - "Me han echado tremenda maldici\xF3n."
+  - "\xBFpuedes revertir sus efectos?"
   success: 0
   failedPotionText: 
   LibroReceta: {fileID: 21300000, guid: 9775047ae5f616d428a8d7751a4ee7fa, type: 3}
