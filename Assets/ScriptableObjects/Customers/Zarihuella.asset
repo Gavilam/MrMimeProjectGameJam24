@@ -15,9 +15,9 @@ MonoBehaviour:
   id: 0
   recipe: {fileID: 11400000, guid: 429779ffb2fae7b48ab0c6a3225924b5, type: 2}
   image: {fileID: 21300000, guid: 834e95624cbe3044382eb6a701b57e1d, type: 3}
-  goodResult: {fileID: 21300000, guid: f3559096a9e40dd4ba044ed1a1951c30, type: 3}
-  badResult: {fileID: 0}
+  goodResult: {fileID: 21300000, guid: 0dd607fadaceaed4f8829fba59190c7c, type: 3}
+  badResult: {fileID: 21300000, guid: cd3c64b8583566e40bcbd7e87ead1e1e, type: 3}
   textos:
   - Hola me llamo Pepe
   - Revierte la transformacion
-  exito: 0
+  success: 0
