@@ -63,9 +63,6 @@ public class GameManager : MonoBehaviour
 
 
         StartCoroutine(AnimateRisingPotionCorrutina());
-
-
-       
     }
 
     

@@ -14,6 +14,10 @@ public class TextWindow : MonoBehaviour
     [SerializeField] FlowManager flowManager;
     int count = 0;
 
+    [SerializeField] AudioClip clientSpeech;
+    [SerializeField] AudioClip miksSpeech;
+    [SerializeField] AudioSource audioSource;
+
     public bool isSpaceActive = false;
  
     [SerializeField] float charWaitTime = 0.05f;
@@ -64,6 +68,9 @@ public class TextWindow : MonoBehaviour
         TMP_Text textUI = null;
 
         if (count == customer.textos.Length){
+            audioSource.clip = miksSpeech;
+            audioSource.Play();
+
             textToShow = magaDialogo;
             textUI = shopkeeperTextBox;
             
@@ -71,6 +78,9 @@ public class TextWindow : MonoBehaviour
             shopkeeperTextBox.transform.parent.gameObject.SetActive(true);
         }
         else{
+            audioSource.clip = clientSpeech;
+            audioSource.Play();
+
             textToShow = customer.textos[count];
             textUI = customerTextBox;
 
