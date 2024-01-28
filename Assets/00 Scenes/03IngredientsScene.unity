@@ -6286,15 +6286,15 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 2ba14cb5c883df24a9a2ce1a552f15b2, type: 2}
     - target: {fileID: 8442463782250436817, guid: c98539c9682318847abea3ef7d589aa7, type: 3}
       propertyPath: tiempo01
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8442463782250436817, guid: c98539c9682318847abea3ef7d589aa7, type: 3}
-      propertyPath: tiempo02
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8442463782250436817, guid: c98539c9682318847abea3ef7d589aa7, type: 3}
+      propertyPath: tiempo02
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442463782250436817, guid: c98539c9682318847abea3ef7d589aa7, type: 3}
       propertyPath: tiempo03
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8442463782250436817, guid: c98539c9682318847abea3ef7d589aa7, type: 3}
       propertyPath: flowManager
@@ -17618,7 +17618,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &1973829565
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -17660,7 +17660,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1636646705
   m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -18265,7 +18265,7 @@ ParticleSystem:
     maxNumParticles: 1000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
-    rotation3D: 0
+    rotation3D: 1
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
