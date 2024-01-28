@@ -61,6 +61,7 @@ public class HandMovement : MonoBehaviour
             StartCoroutine(MoveToCauldronCoroutine());
 
             grabbedIngredient = collision.transform;
+            grabbedIngredient.parent.GetComponent<IngredientMovement>().IngredientGrabbed();
             grabbedIngredient.parent = transform;
         }
     }

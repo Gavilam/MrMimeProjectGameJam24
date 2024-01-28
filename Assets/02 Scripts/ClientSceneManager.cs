@@ -29,6 +29,10 @@ public class ClientSceneManager : MonoBehaviour
         customer_object.SetActive(true);
     }
 
+    private void SetText(){
+        Debug.Log(customer.textos[0]);
+    }
+
     private void LaunchCanvas()
     {
         GetComponent<Timer>().StartTimer();
