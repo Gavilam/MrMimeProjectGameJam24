@@ -58,3 +58,6 @@ TagManager:
   - name: Fades_IN-OUT
     uniqueID: 3975364495
     locked: 0
+  - name: Book text
+    uniqueID: 3799450811
+    locked: 0
