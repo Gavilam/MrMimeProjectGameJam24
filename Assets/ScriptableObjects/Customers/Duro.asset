@@ -17,3 +17,8 @@ MonoBehaviour:
   image: {fileID: 21300000, guid: 7f0b62986a42ca840af66b66492057b7, type: 3}
   goodResult: {fileID: 21300000, guid: 1e776cbed2a1b12469a78968d0a63eca, type: 3}
   badResult: {fileID: 21300000, guid: f24105b7ac356cf41b2bfc1230b3e5aa, type: 3}
+  textos:
+  - Poh favoh, kiero zermah duro...
+  - por fi...
+  failedPotionText: 
+  exito: 0
