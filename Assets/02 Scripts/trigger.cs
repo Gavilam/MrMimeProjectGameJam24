@@ -56,7 +56,7 @@ public class trigger : MonoBehaviour
         storage.n_customer++;
         if(storage.n_customer < storage.customers.Length)
         {
-            flowManager.ChangeToScene(1);
+            flowManager.ChangeToScene("01ClientScene");
         }
         else
         {
