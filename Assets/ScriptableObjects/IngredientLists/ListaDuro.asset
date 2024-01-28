@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28e65701b2d7bb049b7068d7e49eec62, type: 3}
   m_Name: ListaDuro
   m_EditorClassIdentifier: 
-  ingredients: 0b0000000600000008000000
+  ingredients: 0b0000000600000009000000
