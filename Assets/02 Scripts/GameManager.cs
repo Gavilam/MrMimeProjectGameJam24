@@ -9,6 +9,10 @@ public class GameManager : MonoBehaviour
     //[SerializeField] List<IngredientList> lists;
     [SerializeField] StorageScript storage;
 
+    //array
+    public GameObject[] GOActivar;
+    public float tiempo01, tiempo02, tiempo03;
+
     public Customer customer;
 
     public void Start()
@@ -57,13 +61,44 @@ public class GameManager : MonoBehaviour
         customer.success = correntMatch;
         Debug.Log("Resultado: " + correntMatch);
 
-        AnimateRisingPotion();
+
+        StartCoroutine(AnimateRisingPotionCorrutina());
+
+
+       
+    }
+
+    
+
+
+    IEnumerator AnimateRisingPotionCorrutina()
+    {
+        //quitar mano
+        GOActivar[0].SetActive(false);
+        //poner humo hacer pocion
+        GOActivar[1].SetActive(true);
+      
+        yield return new WaitForSeconds(tiempo01); //4
+
+        //poner hacer pocion
+        GOActivar[2].SetActive(true);
+     
+        yield return new WaitForSeconds(tiempo02); //3
+
+        //activar carabruja fase 1
+        GOActivar[3].SetActive(true);
+        //pone fade fase 2
+        yield return new WaitForSeconds(tiempo03);
+        GOActivar[4].SetActive(true);
+
         
+
+
+        yield return new WaitForSeconds(tiempo02);
+
+        //cambio escena
         flowManager.ChangeToNextScene();
     }
 
-    private void AnimateRisingPotion()
-    {
 
-    }
 }
