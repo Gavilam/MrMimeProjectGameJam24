@@ -6,12 +6,14 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] FlowManager flowManager;
-    [SerializeField] List<IngredientList> lists;
+    //[SerializeField] List<IngredientList> lists;
+    [SerializeField] StorageScript storage;
 
-    [SerializeField] PotionResult potionResult;
+    public Customer customer;
 
     public void Start()
     {
+        customer = GetCustomer();
         Events.IngredientsDropped.AddListener(CheckIngredientList);
     }
 
@@ -32,20 +34,28 @@ public class GameManager : MonoBehaviour
         }
     }*/
 
+    private Customer GetCustomer()
+    {
+        Debug.Log("Longitud = " + storage.customers.Length);
+        Debug.Log("N = " + storage.n_customer);
+        return storage.customers[storage.n_customer];
+    }
+
     void CheckIngredientList(List<IngredientType> list)
     {
         bool correntMatch = true;
 
         for (int i = 0; i < list.Count; i++)
         {
-            if (list[i] != lists[0][i])
+            if (list[i] != customer.recipe[i])
             {
                 correntMatch = false;
                 break;
             }
         }
 
-        potionResult.success = correntMatch;
+        customer.success = correntMatch;
+        Debug.Log("Resultado: " + correntMatch);
         flowManager.ChangeToNextScene();
     }
 }
