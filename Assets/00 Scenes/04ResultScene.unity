@@ -15299,15 +15299,13 @@ MonoBehaviour:
   tiempo01: 0.5
   tiempo02: 1
   tiempo03: 0.1
+  tiempo04: 5
   GOActivar:
   - {fileID: 1473760058}
   - {fileID: 607255040}
   - {fileID: 1477485344}
   - {fileID: 1848987990}
-  GOPersonajes:
-  - {fileID: 1514945457}
-  - {fileID: 18848239}
-  - {fileID: 218533490}
+  flowManager: {fileID: 1735455678}
   storage: {fileID: 11400000, guid: 2ba14cb5c883df24a9a2ce1a552f15b2, type: 2}
   customer_object: {fileID: 1514945457}
   customer: {fileID: 0}
@@ -20748,11 +20746,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9198299043247532880, guid: d878a47838259264fbd2a69ddc2d2844, type: 3}
+      propertyPath: isKeyChange
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d878a47838259264fbd2a69ddc2d2844, type: 3}
+--- !u!114 &1735455678 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9198299043247532880, guid: d878a47838259264fbd2a69ddc2d2844, type: 3}
+  m_PrefabInstance: {fileID: 1735455677}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9041e62cf78f16148aab6cf0fe2ab87c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1848987990
 GameObject:
   m_ObjectHideFlags: 0
