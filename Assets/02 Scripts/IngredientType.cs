@@ -7,5 +7,13 @@ public enum IngredientType
     Carta,
     Tablilla,
     Harina,
-    Calcetin
+    Calcetin,
+    Ajo,
+    Pie,
+    Pollo,
+    CabezaDisecada,
+    Arbolito,
+    PastaDental,
+    PapaNoel,
+    Turron,
 }
