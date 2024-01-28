@@ -53,6 +53,9 @@ public class HandMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (grabbedIngredient != null)
+            return;
+            
         Debug.Log("CHOCANDO CON " + collision.gameObject.name + "!!");
         if (collision.CompareTag("Ingredient"))
         {
