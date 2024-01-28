@@ -520,7 +520,6 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -602,18 +601,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519420033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08d115efb270f474abb84a9ce3237c8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &682089637
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,9 +856,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customerTextBox: {fileID: 0}
   shopkeeperTextBox: {fileID: 0}
-  customer: {fileID: 0}
+  clientSceneManager: {fileID: 0}
   magaDialogo: 
   flowManager: {fileID: 509091491}
+  isSpaceActive: 0
   charWaitTime: 0.05
 --- !u!114 &1273264871
 MonoBehaviour:
@@ -1033,9 +1021,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customerTextBox: {fileID: 0}
   shopkeeperTextBox: {fileID: 0}
-  customer: {fileID: 0}
+  clientSceneManager: {fileID: 0}
   magaDialogo: 
   flowManager: {fileID: 509091491}
+  isSpaceActive: 0
   charWaitTime: 0.05
 --- !u!1 &1562948082
 GameObject:
@@ -1087,9 +1076,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customerTextBox: {fileID: 449043078}
   shopkeeperTextBox: {fileID: 1083472311}
-  customer: {fileID: 11400000, guid: 4facdaaa8fd6dcc46b968068b0c75eca, type: 2}
+  clientSceneManager: {fileID: 2116767839}
   magaDialogo: 
   flowManager: {fileID: 509091491}
+  isSpaceActive: 0
   charWaitTime: 0.05
 --- !u!1 &1563748230
 GameObject:
@@ -1442,17 +1432,17 @@ MonoBehaviour:
   onTimeUp:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 27342609}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1562948084}
+        m_TargetAssemblyTypeName: TextWindow, Assembly-CSharp
+        m_MethodName: ActivateSpaceKey
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
