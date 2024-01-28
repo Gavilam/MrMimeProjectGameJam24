@@ -40,6 +40,7 @@ public class TextWindow : MonoBehaviour
             return;
 
         if(Input.GetKeyDown(KeyCode.Space)){
+            Debug.Log("espacio");
             if (count > customer.textos.Length)
                 flowManager.ChangeToNextScene();
             else

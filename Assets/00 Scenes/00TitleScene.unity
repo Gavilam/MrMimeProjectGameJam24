@@ -215,8 +215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customerList:
-  - {fileID: 11400000, guid: 4facdaaa8fd6dcc46b968068b0c75eca, type: 2}
-  - {fileID: 11400000, guid: 1af3e27297e87ec4496f914698bc119c, type: 2}
+  - {fileID: 11400000, guid: f28c3110869d2514aa1cd0c3a276cfcc, type: 2}
   storage: {fileID: 11400000, guid: 2ba14cb5c883df24a9a2ce1a552f15b2, type: 2}
 --- !u!4 &1332233574
 Transform:

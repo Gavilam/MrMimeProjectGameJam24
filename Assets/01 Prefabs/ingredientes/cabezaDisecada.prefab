@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 3655464179127138879}
   - component: {fileID: 5715335960961879740}
   m_Layer: 0
-  m_Name: Ingredient
+  m_Name: cabezaDisecada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 5339730118855223283}
   - component: {fileID: 2879823511519810150}
   m_Layer: 0
-  m_Name: Carta_Uno
+  m_Name: Harina
   m_TagString: Ingredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -213,7 +213,7 @@ SpriteRenderer:
   m_SortingLayerID: -386986347
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6fc1c36cc6d6df4428455bc6b306184f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7b56baff0a266244d86e8c159291fe37, type: 3}
   m_Color: {r: 1, g: 0.8726415, b: 0.8726415, a: 1}
   m_FlipX: 0
   m_FlipY: 0
