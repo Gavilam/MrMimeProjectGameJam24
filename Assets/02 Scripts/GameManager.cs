@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] AudioSource source;
     [SerializeField] AudioClip subi;
     [SerializeField] AudioClip burbujas;
+    [SerializeField] AudioClip risa;
 
     //array
     public GameObject[] GOActivar;
@@ -90,8 +91,11 @@ public class GameManager : MonoBehaviour
 
         //activar carabruja fase 1
         GOActivar[3].SetActive(true);
+
+        source.PlayOneShot(risa);
+
         //pone fade fase 2
-        yield return new WaitForSeconds(tiempo03);
+        yield return new WaitForSeconds(risa.length);
         GOActivar[4].SetActive(true);
 
         

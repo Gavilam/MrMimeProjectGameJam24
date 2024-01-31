@@ -6557,6 +6557,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8442463782250436817, guid: c98539c9682318847abea3ef7d589aa7, type: 3}
+      propertyPath: risa
+      value: 
+      objectReference: {fileID: 8300000, guid: 234d56c96c7864d4881be554f35a732c, type: 3}
+    - target: {fileID: 8442463782250436817, guid: c98539c9682318847abea3ef7d589aa7, type: 3}
       propertyPath: subi
       value: 
       objectReference: {fileID: 8300000, guid: 238f474c7b58aaa4a9f512d11dc85960, type: 3}
