@@ -15388,7 +15388,7 @@ MonoBehaviour:
   tiempo02: 1
   tiempo03: 0.1
   tiempo04: 5
-  throwPotion: {fileID: 0}
+  throwPotion: {fileID: 8300000, guid: b7c06a14a14e4ee41b35f8e37a40e347, type: 3}
   goodAudio: {fileID: 8300000, guid: 3b17ce79671b5d9458e5807594c07471, type: 3}
   badAudio: {fileID: 8300000, guid: 5f8f50d2bb905de448bb3b3656d8827f, type: 3}
   audioSource: {fileID: 2112456207}

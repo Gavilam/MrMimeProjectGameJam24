@@ -336,6 +336,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fade_OUT
       objectReference: {fileID: 0}
+    - target: {fileID: 2361730436452091708, guid: 01e0d19687b72914a8b9ee18901139b8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2839181062405830113, guid: 01e0d19687b72914a8b9ee18901139b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -443,11 +447,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ed64818167054434491c9c22e5310607, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5f9eb9c1af305ee4c86eb02f2b2bed0c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.507
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -615,7 +619,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 12.697341
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -6564,6 +6568,10 @@ PrefabInstance:
       propertyPath: storage
       value: 
       objectReference: {fileID: 11400000, guid: 2ba14cb5c883df24a9a2ce1a552f15b2, type: 2}
+    - target: {fileID: 8442463782250436817, guid: c98539c9682318847abea3ef7d589aa7, type: 3}
+      propertyPath: burbujas
+      value: 
+      objectReference: {fileID: 8300000, guid: bc67f926133376a47af6d186c2386878, type: 3}
     - target: {fileID: 8442463782250436817, guid: c98539c9682318847abea3ef7d589aa7, type: 3}
       propertyPath: tiempo01
       value: 3

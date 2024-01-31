@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] AudioSource source;
     [SerializeField] AudioClip subi;
+    [SerializeField] AudioClip burbujas;
 
     //array
     public GameObject[] GOActivar;
@@ -68,19 +69,19 @@ public class GameManager : MonoBehaviour
         StartCoroutine(AnimateRisingPotionCorrutina());
     }
 
-    
-
-
     IEnumerator AnimateRisingPotionCorrutina()
     {
         //quitar mano
         GOActivar[0].SetActive(false);
         //poner humo hacer pocion
         GOActivar[1].SetActive(true);
-      
-        yield return new WaitForSeconds(tiempo01); //4
+
+        source.PlayOneShot(burbujas);
+
+        yield return new WaitForSeconds(burbujas.length); //4
 
         //poner hacer pocion
+        Debug.Log("Que suene la subida");
         source.PlayOneShot(subi);
 
         GOActivar[2].SetActive(true);
